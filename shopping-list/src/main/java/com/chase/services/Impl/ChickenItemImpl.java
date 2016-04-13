@@ -8,10 +8,11 @@ import com.chase.services.ItemInterface;
  */
 public class ChickenItemImpl implements ItemInterface {
     public ItemData getItemData() {
-        ItemData itemData = new ItemData();
-        itemData.setItemCode("meat01");
-        itemData.setName("Chicken");
-        itemData.setQuantity(6);
+        ItemData itemData = new ItemData.Builder()
+        .setItemCode("meat01")
+        .setName("Chicken")
+        .setQuantity(6)
+        .build();
         return itemData;
     }
 }

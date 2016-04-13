@@ -8,6 +8,6 @@ public abstract class Food {
     public void setNextFood(Food nextFood) {
         this.nextFood = nextFood;
     }
-    public abstract String handleRequest(String request);
+    public abstract String handleFoodRequest(String request);
 
 }

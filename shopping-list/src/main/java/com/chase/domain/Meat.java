@@ -5,12 +5,12 @@ package com.chase.domain;
  */
 public class Meat extends Food {
     @Override
-    public String handleRequest(String request) {
+    public String handleFoodRequest(String request) {
         if (request.equalsIgnoreCase("meat")) {
             return "This is meat.";
         } else {
             if (nextFood != null) {
-                return nextFood.handleRequest(request);
+                return nextFood.handleFoodRequest(request);
             }
             return "No Food type";
         }

@@ -8,10 +8,10 @@ import com.chase.services.ItemInterface;
  */
 public class BagelItemImpl implements ItemInterface {
     public ItemData getItemData() {
-        ItemData itemData = new ItemData();
-        itemData.setItemCode("bread01");
-        itemData.setName("Bagel");
-        itemData.setQuantity(7);
+        ItemData itemData = new ItemData.Builder()
+        .setItemCode("bread01")
+        .setName("Bagel")
+        .setQuantity(7).build();
         return itemData;
     }
 }
